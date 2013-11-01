@@ -4,3 +4,7 @@
 /public_html/downloader/.cache/
 /public_html/downloader/connect.cfg
 /bin
+/public_html/app/code/community/Aoe/
+/public_html/app/etc/modules/Aoe_TemplateHints.xml
+/public_html/skin/frontend/base/default/aoe_templatehints
+
