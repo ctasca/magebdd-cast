@@ -3,3 +3,4 @@
 /public_html/var/*
 /public_html/downloader/.cache/
 /public_html/downloader/connect.cfg
+/bin
