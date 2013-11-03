@@ -1,0 +1,39 @@
+default:
+    formatter:
+        name: pretty
+    context:
+        class: MyMagentoContext
+        parameters:
+             base_url:   http://magebdd.dev
+    extensions:
+        MageTest\MagentoExtension\Extension:
+            base_url: "http://magebdd.dev"
+        Behat\MinkExtension\Extension:
+            base_url: http://magebdd.dev
+            goutte:
+                server_parameters:
+                    HTTP_HOST: %behat.mink.base_url%
+            sahi: ~
+customer:
+    context:
+        class: CustomerUserContext
+        parameters:
+             base_url:   http://magebdd.dev
+
+admin:
+    context:
+        class: AdminUserContext
+        parameters:
+             base_url:   http://magebdd.dev
+    extensions:
+            MageTest\MagentoExtension\Extension:
+                base_url: "http://magebdd.dev"
+            Behat\MinkExtension\Extension:
+                base_url: http://magebdd.dev
+                sahi: ~
+
+module:
+    context:
+        class: ModuleContext
+        parameters:
+             base_url:   http://magebdd.dev
