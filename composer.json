@@ -4,7 +4,6 @@
         "magento-hackathon/composer-command-integrator": "*"
     },
     "require-dev": {
-        "fbrnc/Aoe_TemplateHints": "dev-master",
         "magetest/magento-phpspec-extension": "dev-develop",
         "magetest/magento-behat-extension": "dev-develop",
         "phpunit/phpunit": "3.7.*",

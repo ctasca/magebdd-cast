@@ -10,6 +10,7 @@ default:
             base_url: "http://magebdd.dev"
         Behat\MinkExtension\Extension:
             base_url: http://magebdd.dev
+            browser_name: phantomjs
             goutte:
                 server_parameters:
                     HTTP_HOST: %behat.mink.base_url%
@@ -25,12 +26,6 @@ admin:
         class: AdminUserContext
         parameters:
              base_url:   http://magebdd.dev
-    extensions:
-            MageTest\MagentoExtension\Extension:
-                base_url: "http://magebdd.dev"
-            Behat\MinkExtension\Extension:
-                base_url: http://magebdd.dev
-                sahi: ~
 
 module:
     context:

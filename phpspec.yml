@@ -1,3 +1,4 @@
+formatter.name: pretty
 extensions: [MageTest\PhpSpec\MagentoExtension\Extension]
 mage_locator:
   spec_prefix: 'spec'
